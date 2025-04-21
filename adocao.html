@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PetNosso</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="adocao.css" />
+    <link rel="icon" href="img/petlogo.png" type="image/png" sizes="16x16" />
+  </head>
+  <body>
+    <header
+      class="text-white text-center py-4 rounded-bottom-pill"
+      style="background-color: #492391"
+    >
+      <img
+        src="img/petlogo.png"
+        alt="PetNosso"
+        class="img-fluid rounded small d-none d-lg-block m-auto"
+        style="width: 100px"
+      />
+      <h1>Bem-vindo ao PetNosso</h1>
+      <p>O melhor cuidado para o seu pet!</p>
+      <nav class="navbar navbar-expand-lg navbar-light d-lg-inline-block">
+        <div class="container-fluid">
+          <div class="collapse navbar-collapse justify-content-end">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link text-primary fw-bold cor active"
+                  aria-current="page"
+                  href="index.html"
+                  >Início</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-success fw-bold cor"
+                  href="servicos.html"
+                  >Serviços</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-warning fw-bold cor"
+                  href="catalogo.html"
+                  >Catálogo</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-danger fw-bold cor" href="adocao.html"
+                  >Adoção</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light d-lg-none">
+      <div class="container-fluid">
+        <a class="navbar-brand d-block d-lg-none" href="index.html"
+          ><img
+            src="img/petlogo.png"
+            alt="PetNosso"
+            class="img-fluid rounded small"
+            style="width: 30%"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link active text-primary fw-bold cor"
+                aria-current="page"
+                href="index.html"
+                >Início</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-success fw-bold cor"
+                href="servicos.html"
+                >Serviços</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-warning fw-bold cor"
+                href="catalogo.html"
+                >Catálogo</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-danger fw-bold cor" href="adocao.html"
+                >Adoção</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container my-5">
+      <div class="form-container">
+        <h2>formulario de adocao de pet</h2>
+        <form>
+          <label for="nome">nome completo:</label>
+          <input type="text" id="nome" name="nome" required />
+
+          <label for="E-mail">E-mail:</label>
+          <input type="text" id="E-email" name="E-email" required />
+
+          <label for="nome">endereço completo:</label>
+          <input type="text" id="nome" name="nome" required />
+
+          <label for="telefone">Telefone:</label>
+          <input type="tel" id="telefone" name="telefone" required />
+
+          <label for="animal">Tipo de residecia:</label>
+          <select id="animal" name="animal" required>
+            <option value="">Selecione...</option>
+            <option value="casa">casa</option>
+            <option value="apatamento">apatamento</option>
+            <option value="outro">Outro</option>
+          </select>
+
+          <p>
+            <b>Você já possui pets:</b><br />
+            <label for="sim"
+              ><input
+                id="sim"
+                type="radio"
+                name="pets"
+                value="sim"
+                required
+              />Sim</label
+            >
+            <label for="nao"
+              ><input
+                id="nao"
+                type="radio"
+                name="pets"
+                value="nao"
+                required
+              />Não</label
+            >
+          </p>
+
+          <label for="servico">preferencia de animal para adocao:</label>
+          <select id="servico" name="servico" required>
+            <option value="">Selecione...</option>
+            <option value="gato">gato</option>
+            <option value="cachorro">cachorro</option>
+            <option value="outro">Outro</option>
+          </select>
+
+          <label for="obs">Observações:</label>
+          <textarea
+            id="obs"
+            name="obs"
+            placeholder="Informações adicionais..."
+          ></textarea>
+
+          <input type="checkbox" />declaro que concordo com os termos de
+          responsabilidade de adoção
+
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3">
+      <p>&copy; 2025 PetNosso. Todos os direitos reservados.</p>
+    </footer>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+</html>

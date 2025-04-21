@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PetNosso</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="img/petlogo.png" type="image/png" sizes="16x16" />
+  </head>
+  <body>
+    <header
+      class="text-white text-center py-4 rounded-bottom-pill"
+      style="background-color: #492391"
+    >
+      <img
+        src="img/petlogo.png"
+        alt="PetNosso"
+        class="img-fluid rounded small d-none d-lg-block m-auto"
+        style="width: 100px"
+      />
+      <h1>Bem-vindo ao PetNosso</h1>
+      <p>O melhor cuidado para o seu pet!</p>
+      <nav class="navbar navbar-expand-lg navbar-light d-lg-inline-block">
+        <div class="container-fluid">
+          <div class="collapse navbar-collapse justify-content-end">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link text-primary fw-bold cor active"
+                  aria-current="page"
+                  href="index.html"
+                  >Início</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-success fw-bold cor"
+                  href="servicos.html"
+                  >Serviços</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-warning fw-bold cor"
+                  href="catalogo.html"
+                  >Catálogo</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-danger fw-bold cor" href="adocao.html"
+                  >Adoção</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-success fw-bold cor"
+                  href="login.html"
+                  >Login</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light d-lg-none">
+      <div class="container-fluid">
+        <a class="navbar-brand d-block d-lg-none" href="index.html"
+          ><img
+            src="img/petlogo.png"
+            alt="PetNosso"
+            class="img-fluid rounded small"
+            style="width: 30%"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link active text-primary fw-bold cor"
+                aria-current="page"
+                href="index.html"
+                >Início</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-success fw-bold cor" href="servicos.html"
+                >Serviços</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-warning fw-bold cor" href="catalogo.html"
+                >Catálogo</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-danger fw-bold cor" href="adocao.html"
+                >Adoção</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-success fw-bold cor"
+                href="login.html"
+                >Login</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container my-5">
+      <section class="text-center bg-body-secondary p-4 rounded">
+        <h2>Nossos Serviços</h2>
+        <p>
+          Oferecemos ajuda aos necessitados, consultas veterinárias, produtos e
+          muito mais!
+        </p>
+      </section>
+
+      <section class="row mt-4 descricao">
+        <div class="col-md-4 cartas">
+          <div class="card mb-3">
+            <img
+              src="img/banner.webp"
+              class="card-img-top img-fluid"
+              alt="Alimente um Pet"
+              style="width: 100%; height: auto; max-height: 150px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Alimento um Pet</h5>
+              <p class="card-text">
+                Distribua felicidade para Pets que não tem o que comer doando
+                alimentos.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 cartas">
+          <div class="card mb-3">
+            <img
+              src="img/veterinaria.webp"
+              class="card-img-top img-fluid"
+              alt="Alimente um Pet"
+              style="width: 100%; height: auto; max-height: 150px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Consultas Veterinárias</h5>
+              <p class="card-text">
+                Cuidamos da saúde do seu pet com profissionais qualificados.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 cartas">
+          <div class="card mb-3">
+            <img
+              src="img/produtos.jpg"
+              class="card-img-top img-fluid"
+              alt="Alimente um Pet"
+              style="width: 100%; height: auto; max-height: 150px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Produtos</h5>
+              <p class="card-text">
+                Encontre os melhores produtos para o seu pet em nossa loja.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 cartas">
+          <div class="card mb-3">
+            <img
+              src="img/remedios.webp"
+              class="card-img-top img-fluid"
+              alt="Alimente um Pet"
+              style="width: 100%; height: auto; max-height: 150px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Remédios</h5>
+              <p class="card-text">
+                Encontre os melhores remédios para tratar seus Pets.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 cartas">
+          <div class="card mb-3">
+            <img
+              src="img/causa.jpg"
+              class="card-img-top img-fluid"
+              alt="Alimente um Pet"
+              style="width: 100%; height: auto; max-height: 150px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Causas</h5>
+              <p class="card-text">
+                Saiba como evitar doênças e tratar as que seu Pet possa ter.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 cartas">
+          <div class="card mb-3">
+            <img
+              src="img/lançamentos.png"
+              class="card-img-top img-fluid"
+              alt="Alimente um Pet"
+              style="width: 100%; height: auto; max-height: 150px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Lançamentos</h5>
+              <p class="card-text">Veja as novidades da nossa loja!</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="text-center mt-5 bg-body-secondary p-4 rounded">
+        <h2>Sobre Nós</h2>
+        <p>
+          O PetNosso nasceu com o propósito de oferecer o melhor cuidado para os
+          pets e seus donos. Nossa missão é promover o bem-estar animal através
+          de serviços de qualidade, produtos selecionados e iniciativas que
+          fazem a diferença na vida dos animais e da comunidade.
+        </p>
+        <p>
+          Com uma equipe apaixonada e dedicada, buscamos criar um ambiente
+          acolhedor e confiável para todos que compartilham do amor pelos
+          animais.
+        </p>
+      </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3">
+      <p>&copy; 2025 PetNosso. Todos os direitos reservados.</p>
+    </footer>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+    crossorigin="anonymous"
+  ></script>
+</html>

@@ -1,0 +1,47 @@
+
+.cartas{
+    transition: all 0.3s ease-in-out;
+}
+.cartas:hover {
+    transform: scale(1.1);
+}
+header {
+    opacity: 0;
+    animation: fadeIn 0.8s forwards;
+    box-sizing: border-box;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.card-body:hover {
+    background-color: #492391;
+    color: white;
+    border-radius: 0 0 4px 4px;
+    transition: all 0.2s ease-in-out;
+}
+@media (max-width: 768px) {
+    .descricao{
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+nav ul li {
+    margin: 5px;
+}
+header ul li {
+    margin: 5px;
+}
+.cor:hover {
+    background-color: #4a2391d0;
+    border-radius: 5px;
+    transform: translate(10px, 0px);
+    transition: all 0.2s ease-in-out;
+}
