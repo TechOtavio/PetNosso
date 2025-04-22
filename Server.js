@@ -12,11 +12,15 @@
         // Usuários simples para validação.
         const usuarios = [
             {
-                email: 'otaviolevi@petshop.com',    
+                email: 'otaviolevi@petnosso.com',    
                 senha: '123456'
             },
             {
-                email: 'gabrielalex@petshop.com',
+                email: 'gabrielalex@petnosso.com',
+                senha: '123456'
+            },
+            {
+                email: 'dionizio@petnosso.com',
                 senha: '123456'
             }
         ]
